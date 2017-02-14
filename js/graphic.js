@@ -48,13 +48,9 @@ $(document).ready(function() {
       "data": data,
       "columns": columns,
       "order": [
-        [0, "desc"]
+        [0, "asc"]
       ],
       "pagingType": "simple"
-        //uncomment these options to simplify your table
-        //"paging": false,
-        //"searching": false,
-        //"info": false
     });
   }
 });
