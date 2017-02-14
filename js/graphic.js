@@ -38,7 +38,6 @@ $(document).ready(function() {
 
   function writeTable(data) {
     //select main div and put a table there
-    //use bootstrap css to customize table style: http://getbootstrap.com/css/#tables
     $('#graphic').html(
       '<table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-condensed table-responsive" id="mySelection"></table>'
     );
@@ -49,9 +48,9 @@ $(document).ready(function() {
       "data": data,
       "columns": columns,
       "order": [
-        [2, "desc"]
-      ], //order on second column
-      "pagingType": "simple" //no page numbers
+        [0, "desc"]
+      ],
+      "pagingType": "simple"
         //uncomment these options to simplify your table
         //"paging": false,
         //"searching": false,
@@ -59,4 +58,3 @@ $(document).ready(function() {
     });
   }
 });
-//end of writeTable
