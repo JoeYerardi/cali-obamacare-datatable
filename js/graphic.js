@@ -1,21 +1,24 @@
-//Edit 'key' and 'columns' to connect your spreadsheet
-
-//enter google sheets key here
+//google sheets key
 var key =
-  "https://docs.google.com/spreadsheets/d/113QZOTS9JQ1WGfwjwQrOpErUBJTAnaBmdjP0_OjA53c/pubhtml?gid=489792061&single=true";
+  "https://docs.google.com/spreadsheets/d/1cU72AveRa53d9hX7nLIIYscTMycuF9O6JRiEQGnnbOI/pubhtml?gid=0&single=true";
 
-//"data" refers to the column name with no spaces and no capitals
-//punctuation or numbers in your column name
+//"data" refers to the column name with no spaces and no capitals, punctuation or numbers in your column name
 //"title" is the column name you want to appear in the published table
 var columns = [{
-  "data": "company",
-  "title": "Company"
+  "data": "county",
+  "title": "County"
 }, {
-  "data": "violations",
-  "title": "Claims"
+  "data": "medi-calenrolleesunderacaxpansion",
+  "title": "Medi-Cal Enrollees Under ACA Expansion"
 }, {
-  "data": "total-award",
-  "title": "Total Awarded"
+  "data": "totalmedi-calenrollees",
+  "title": "Total Medi-Cal Enrollees"
+}, {
+  "data": "subsidizedcoveredcaliforniaenrollees",
+  "title": "Subsidized Covered California Enrollees"
+}, {
+  "data": "totalcoveredcaliforniaenrollees",
+  "title": "Total Covered California Enrollees"
 }];
 
 $(document).ready(function() {
